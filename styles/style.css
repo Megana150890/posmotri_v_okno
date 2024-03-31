@@ -9,7 +9,9 @@ html {
 }
 
 .page {
+  display: flex;
   inline-size: 1200px;
+  block-size: 100%;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
