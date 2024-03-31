@@ -42,6 +42,16 @@ ol {
   list-style: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+} 
+
 .content {
   margin: 133px 30px;
  display: grid;
@@ -271,15 +281,7 @@ color: #FFFFFF;
 
 }
 
-.visually-hidden {
-  position: absolute;
-  inline-size: 1px;
-  block-size: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  white-space: nowrap;
-} 
+
 
 .button:hover {
   cursor: pointer;
@@ -316,14 +318,13 @@ color: #FFFFFF;
   text-decoration: none;
 }
 
-.search-form__fieldset:has(.search-form__checkbox-list) {
-  width: 212px;
-}
-
-
 
 .search-form__label:focus {
-  outline-color: none;
+  outline: none;
+}
+
+.search-form__label:focus-visible{
+  outline: 1px solid #fff;
 }
 
 .search-form__label-text:hover {
