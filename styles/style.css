@@ -150,13 +150,11 @@ justify-content: center;
   align-self: flex-end;
   min-inline-size: 194px;
   min-block-size: 34px;
-
-
 }
 
 
 .more-button {
-  position: absolute;
+  align-self: flex-end;
   margin-bottom: auto;
   padding: 6px 144px;
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -174,8 +172,6 @@ justify-content: center;
 
 
 .content__details {
-  position: relative;
-
   width: 399px;
   height: 534px;
   display: flex;
@@ -191,7 +187,7 @@ justify-content: center;
   width: 399px;
   height: 298px;
   overflow-x: hidden;
-  position: absolute;
+  position: relative;
  bottom: 0px;
  display: flex;
  flex-direction: column;
