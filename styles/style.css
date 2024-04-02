@@ -162,9 +162,9 @@ justify-content: center;
 }
 
 .more-button {
+  width: 100%;
   align-self: flex-end;
   margin-bottom: auto;
-  padding: 6px 144px;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -173,7 +173,6 @@ justify-content: center;
   text-align: center;
   color: #FFFFFF;
   background-color: transparent;
-  width: 399px;
   min-height: 34px;
   border: 1px solid #fff;
 }
@@ -212,9 +211,9 @@ align-content: stretch;
   height: 103px;
 }
 
-.content__video-card-description-container {
+/* .content__video-card-description-container {
 width: 200px;
-}
+} */
 
 .title {
 font-family: 'Oswald', sans-serif;
@@ -267,10 +266,6 @@ line-height: 16px;
 color: #FFFFFF;
 }
 
-.button:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
 
 .search-form__label:hover .search-form__label-text {
   text-decoration: underline;
@@ -278,15 +273,26 @@ color: #FFFFFF;
 
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
+  outline-offset: 1px;
 }
 
 .search-form__textfield:focus {
   outline: none;
 }
 
+.search-form__textfield:has(:focus-visible) {
+  outline-offset: 10px;
+}
+
 .search-form__textfield:active {
   outline: 1px solid #fff;
 }
+
+.button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 
 .button:focus {
   outline: none;
@@ -294,6 +300,7 @@ color: #FFFFFF;
 
 .button:focus-visible {
   outline: 1px solid #fff;
+  outline-offset: -3px;
 }
 
 .button:active {
@@ -301,14 +308,6 @@ color: #FFFFFF;
   text-decoration: none;
 }
 
-
-.search-form__label:focus {
-  outline: none;
-}
-
-.search-form__label:focus-visible{
-  outline: 1px solid #fff;
-}
 
 .search-form__label-text:hover {
   cursor: pointer;
